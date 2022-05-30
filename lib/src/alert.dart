@@ -223,21 +223,22 @@ class Alert {
             }
           },
         );
-      } else {
-        Widget cancelButton = DialogButton(
-          child: Text(
-            "CANCEL",
-            style: TextStyle(color: Colors.white, fontSize: 20),
-          ),
-          onPressed: () => Navigator.pop(context),
-        );
-        if (style.buttonsDirection == ButtonsDirection.row) {
-          cancelButton = Expanded(
-            child: cancelButton,
-          );
-        }
-        expandedButtons.add(cancelButton);
       }
+      // else {
+      //   Widget cancelButton = DialogButton(
+      //     child: Text(
+      //       "CANCEL",
+      //       style: TextStyle(color: Colors.white, fontSize: 20),
+      //     ),
+      //     onPressed: () => Navigator.pop(context),
+      //   );
+      //   if (style.buttonsDirection == ButtonsDirection.row) {
+      //     cancelButton = Expanded(
+      //       child: cancelButton,
+      //     );
+      //   }
+      //   expandedButtons.add(cancelButton);
+      // }
     }
     return expandedButtons;
   }
